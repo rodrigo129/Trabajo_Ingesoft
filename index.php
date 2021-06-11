@@ -1,1 +1,3 @@
-ECHO "test"
+<?php
+echo "corriendo en php"
+?>
