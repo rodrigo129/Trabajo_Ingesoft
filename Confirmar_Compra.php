@@ -91,8 +91,11 @@ require_once "Capa_Control/control_barras.php";
         <input type="radio" class="btn-check" name="btnradioPago" id="btnradio4" autocomplete="off">
         <label class="btn btn-outline-primary" for="btnradio4">Tarjeta de Crédito</label>
     </div>
-
-            <button type="submit" class="btn btn-primary btn-sm" style="width: 100px">Confirmar</button>
+            <div style='text-align:center'>
+                <a class="btn btn-primary" href="#" role="button">Subir</a>
+                <a class="btn btn-primary" href="#" role="button">Volver al Carro</a>
+                <input class="btn btn-primary" type="submit" value="Confirmar Compra">
+            </div>
 
     <!--</form>-->
 </div>
