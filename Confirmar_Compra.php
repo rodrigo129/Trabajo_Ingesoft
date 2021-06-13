@@ -61,11 +61,17 @@ require_once "Capa_Control/control_barras.php";
     <p>¿Quién retirará su compra?</p>
         <div class="d-grid gap-3">
             <div class="btn-group-vertical" role="group" aria-label="Retiro">
-                <input type="radio" class="btn-check" name="btnradioRetiro" id="btnradio1" autocomplete="off" checked>
-                <label class="btn btn-outline-primary" for="btnradio1">Yo mismo</label>
+                <input type="radio" class="btn-check" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" name="btnradioRetiro" id="btnradio1" autocomplete="off" checked>
+                <label class="btn btn-outline-primary"  for="btnradio1">Yo mismo</label>
 
-                <input type="radio" class="btn-check" name="btnradioRetiro" id="btnradio2" autocomplete="off">
+                <input type="radio" class="btn-check" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" name="btnradioRetiro" id="btnradio2" autocomplete="off">
                 <label class="btn btn-outline-primary" for="btnradio2">Alguien más</label>
+            </div>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    Nombre: <input type="text" class="form-control" name="name" style="width: 300px">
+                    RUT: <input type="text" class="form-control" name="name" style="width: 300px">
+                </div>
             </div>
 
 
@@ -85,6 +91,7 @@ require_once "Capa_Control/control_barras.php";
         <input type="radio" class="btn-check" name="btnradioPago" id="btnradio4" autocomplete="off">
         <label class="btn btn-outline-primary" for="btnradio4">Tarjeta de Crédito</label>
     </div>
+
             <button type="submit" class="btn btn-primary btn-sm" style="width: 100px">Confirmar</button>
 
     <!--</form>-->
