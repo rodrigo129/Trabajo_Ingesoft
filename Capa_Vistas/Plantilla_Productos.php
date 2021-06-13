@@ -50,31 +50,26 @@ function RevisarFicha(){
 </div>
 <body>
     <div style='text-align:center'>
-        <ol class="list-group list-group-horizontal">
-            <li class="list-group-item" style="width: 75px" >IDP</li>
-            <li class="list-group-item" style="width: 150px" >Categoría</li>
-            <li class="list-group-item" style="width: 150px">Marca</li>
-            <li class="list-group-item" style="width: 150px">Modelo</li>
-            <li class="list-group-item" style="width: 150px">Valor</li>
+        <ol class="list-group">
+            <ol class="list-group list-group-horizontal">
+                <li class="list-group-item" style="width: 75px" >IDP</li>
+                <li class="list-group-item" style="width: 150px" >Categoría</li>
+                <li class="list-group-item" style="width: 150px">Marca</li>
+                <li class="list-group-item" style="width: 150px">Modelo</li>
+                <li class="list-group-item" style="width: 150px">Valor</li>
+            </ol>
+            <!--Aqui debe consultar la SQL y mostrar los datos como una lista horizontal anidada
+                Ejemplo:
+            <ol class="list-group list-group-horizontal">
+                <li class="list-group-item list-group-item-action" style="width: 75px" onclick="RevisarFicha('{IDP}')" >IDP</li>
+                <li class="list-group-item list-group-item-action" style="width: 150px" onclick="RevisarFicha('{IDP}')" >Categoría</li>
+                <li class="list-group-item list-group-item-action" style="width: 150px" onclick="RevisarFicha('{IDP}')" >Marca</li>
+                <li class="list-group-item list-group-item-action" style="width: 150px" onclick="RevisarFicha('{IDP}')" >Modelo</li>
+                <li class="list-group-item list-group-item-action" style="width: 150px" onclick="RevisarFicha('{IDP}')" >Valor</li>
+            </ol>
+                Fin Ejemplo-->
         </ol>
     </div>
-    <div style='text-align:center'>
-        <ol class="list-group list-group-horizontal">
-            <li class="list-group-item list-group-item-action" style="width: 75px" onclick="RevisarFicha('001')" >001</li>
-            <li class="list-group-item list-group-item-action" style="width: 150px">Notebook</li>
-            <li class="list-group-item list-group-item-action" style="width: 150px">Wuahei</li>
-            <li class="list-group-item list-group-item-action" style="width: 150px">Un modelo</li>
-            <li class="list-group-item list-group-item-action" style="width: 150px">100</li>
-        </ol>
-    </div>
-    <div style='text-align:center'>
-        <ol class="list-group list-group-horizontal">
-            <li class="list-group-item list-group-item-action" style="width: 75px" onclick="Revisarficha('002')">002</li>
-            <li class="list-group-item list-group-item-action" style="width: 150px" >Categoría</li>
-            <li class="list-group-item list-group-item-action" style="width: 150px">Marca</li>
-            <li class="list-group-item list-group-item-action" style="width: 150px">Modelo</li>
-            <li class="list-group-item list-group-item-action" style="width: 150px">Valor</li>
-        </ol>
-    </div>
+
 
 </body>
