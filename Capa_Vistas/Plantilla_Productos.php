@@ -1,4 +1,75 @@
 <?php
-echo "plantilla Productos";
-require_once "Plantilla_barra.php"
+#echo "corriendo en php";
+$cookie_name="permisos";
+$cookie_value=0;
+setcookie("permisos", 0, time() + (86400 / 24), "/");
+setcookie("test", 2, time() + (86400 / 24), "/");
+require_once "../Capa_Control/control_barras.php";
 ?>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trabajo Ingenieria de software</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <link rel="stylesheet" href="../bootstrap-5.0.1-dist/css/bootstrap.min.css">
+    <script src="../bootstrap-5.0.1-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<!--<script src="JavaScript/jquery.js"></script> -->
+<div>
+<h1>
+    Tienda Online
+</h1>
+</div>
+<nav class="navbar navbar-expand-xl bg-dark">
+    <ul class="navbar">
+        <li class="nav-item">
+            <a class="nav-link" href="#">productos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">link 1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">link 1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Iniciar sesion</a>
+        </li>
+    </ul>
+
+</nav>
+
+<div style='text-align:center'>
+    <h2>
+        Productos
+    </h2>
+</div>
+<body>
+    <div style='text-align:center'>
+        <ol class="list-group list-group-horizontal">
+            <li class="list-group-item" style="width: 75px" >IDP</li>
+            <li class="list-group-item" style="width: 150px" >Categoría</li>
+            <li class="list-group-item" style="width: 150px">Marca</li>
+            <li class="list-group-item" style="width: 150px">Modelo</li>
+            <li class="list-group-item" style="width: 150px">Valor</li>
+        </ol>
+    </div>
+    <div style='text-align:center'>
+        <ol class="list-group list-group-horizontal">
+            <li class="list-group-item" style="width: 75px" >001</li>
+            <li class="list-group-item" style="width: 150px">Notebook</li>
+            <li class="list-group-item" style="width: 150px">Wuahei</li>
+            <li class="list-group-item" style="width: 150px">Un modelo</li>
+            <li class="list-group-item" style="width: 150px">100</li>
+        </ol>
+    </div>
+    <div style='text-align:center'>
+        <ol class="list-group list-group-horizontal">
+            <li class="list-group-item" style="width: 75px" >002</li>
+            <li class="list-group-item" style="width: 150px" >Categoría</li>
+            <li class="list-group-item" style="width: 150px">Marca</li>
+            <li class="list-group-item" style="width: 150px">Modelo</li>
+            <li class="list-group-item" style="width: 150px">Valor</li>
+        </ol>
+    </div>
+
+</body>
