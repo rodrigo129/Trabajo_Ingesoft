@@ -15,7 +15,7 @@ function RevisarFicha(){
 <head>
     <meta charset="UTF-8">
     <title>Trabajo Ingenieria de software</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1">
     <link rel="stylesheet" href="../bootstrap-5.0.1-dist/css/bootstrap.min.css">
     <script src="../bootstrap-5.0.1-dist/js/bootstrap.bundle.min.js"></script>
 </head>
@@ -42,13 +42,16 @@ function RevisarFicha(){
     </ul>
 
 </nav>
-
-<div style='text-align:center'>
-    <h2>
+<div class="bg-image"
+     style="
+     background-image: url('../Imagenes/Malkuth Story.png');
+     height: 100vh;
+  "
+>
+    <h2 class=" text-warning" style="text-align: center">
         Productos
     </h2>
-</div>
-<body>
+    <body>
     <div style='text-align:center'>
         <ol class="list-group">
             <ol class="list-group list-group-horizontal">
@@ -72,4 +75,5 @@ function RevisarFicha(){
     </div>
 
 
-</body>
+    </body>
+</div>

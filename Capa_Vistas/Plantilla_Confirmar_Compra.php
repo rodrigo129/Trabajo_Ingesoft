@@ -37,28 +37,31 @@ require_once "../Capa_Control/control_barras.php";
     </ul>
 
 </nav>
-
-<div style='text-align:center'>
-    <h2>
-        Retiro en Tienda
-    </h2>
-</div>
+<div class="bg-image"
+     style="
+     background-image: url('../Imagenes/Malkuth Story.png');
+     height: 100vh;
+  "
+>
+<h2 class=" text-warning" style="text-align: center">
+    Retiro en Tienda
+</h2>
 
 <div class="container">
     <!--<form action="Enviar_Datos.php" method="get">-->
-    <h2>
+    <h2 class=" text-warning">
         Datos del Cliente
     </h2>
     <div class="d-grid gap-3">
-        Nombre: <input type="text" class="form-control" name="name" style="width: 300px">
-        RUT: <input type="text" class="form-control" name="name" style="width: 300px">
-        Fono Contacto: <input type="text" class="form-control" name="name" style="width: 300px">
-        E-Mail: <input type="text" class="form-control" name="name" style="width: 300px">
+        <p class=" text-warning">Nombre: <input type="text" class="form-control" name="name" style="width: 300px"></p>
+        <p class=" text-warning">RUT: <input type="text" class="form-control" name="name" style="width: 300px"></p>
+        <p class="text-warning">Fono Contacto: <input type="text" class="form-control" name="name" style="width: 300px"></p>
+        <p class="text-warning">E-Mail: <input type="text" class="form-control" name="name" style="width: 300px"></p>
     </div>
-    <h2>
+    <h2 class="text-warning">
         Datos de Retiro
     </h2>
-    <p>¿Quién retirará su compra?</p>
+    <p class="text-warning">¿Quién retirará su compra?</p>
     <div class="d-grid gap-3">
         <div class="btn-group-vertical" role="group" aria-label="Retiro">
             <input type="radio" class="btn-check" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" name="btnradioRetiro" id="btnradio1" autocomplete="off" checked>
@@ -75,14 +78,14 @@ require_once "../Capa_Control/control_barras.php";
         </div>
 
 
-        <h3>
+        <h3 class="text-warning">
             Información de compra
 
         </h3>
         <div style='text-align:center'>
             <ol class="list-group">
                 <ol class="list-group list-group-horizontal">
-                    <li class="list-group-item" style="width: 75px" >cantidad</li>
+                    <li class="list-group-item" style="width: 90px" >Cantidad</li>
                     <li class="list-group-item" style="width: 75px" >IDP</li>
                     <li class="list-group-item" style="width: 150px">Valor Unitario</li>
                     <li class="list-group-item" style="width: 150px">SubTotal</li>
@@ -98,7 +101,7 @@ require_once "../Capa_Control/control_barras.php";
                     Fin Ejemplo-->
             </ol>
         </div>
-        <h3>
+        <h3 class="text-warning">
             Forma de Pago
         </h3>
         <div class="btn-group" role="group" aria-label="Pago">
@@ -116,5 +119,6 @@ require_once "../Capa_Control/control_barras.php";
 
         <!--</form>-->
     </div>
+</div>
 
 </body>
