@@ -1,11 +1,6 @@
 <?php
-#echo "corriendo en php";
-$cookie_name="permisos";
-$cookie_value=0;
-setcookie("permisos", 0, time() + (86400 / 24), "/");
-setcookie("test", 2, time() + (86400 / 24), "/");
-require_once "../Capa_Control/control_barras.php";
-
+#echo "plantilla inicio";
+require_once "Plantilla_barra.php"
 ?>
 
 <head>
