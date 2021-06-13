@@ -5,6 +5,11 @@ $cookie_value=0;
 setcookie("permisos", 0, time() + (86400 / 24), "/");
 setcookie("test", 2, time() + (86400 / 24), "/");
 require_once "../Capa_Control/control_barras.php";
+
+function RevisarFicha(){
+    echo "funciona";
+}
+
 ?>
 
 <head>
@@ -55,20 +60,20 @@ require_once "../Capa_Control/control_barras.php";
     </div>
     <div style='text-align:center'>
         <ol class="list-group list-group-horizontal">
-            <li class="list-group-item" style="width: 75px" >001</li>
-            <li class="list-group-item" style="width: 150px">Notebook</li>
-            <li class="list-group-item" style="width: 150px">Wuahei</li>
-            <li class="list-group-item" style="width: 150px">Un modelo</li>
-            <li class="list-group-item" style="width: 150px">100</li>
+            <li class="list-group-item list-group-item-action" style="width: 75px" onclick="RevisarFicha('001')" >001</li>
+            <li class="list-group-item list-group-item-action" style="width: 150px">Notebook</li>
+            <li class="list-group-item list-group-item-action" style="width: 150px">Wuahei</li>
+            <li class="list-group-item list-group-item-action" style="width: 150px">Un modelo</li>
+            <li class="list-group-item list-group-item-action" style="width: 150px">100</li>
         </ol>
     </div>
     <div style='text-align:center'>
         <ol class="list-group list-group-horizontal">
-            <li class="list-group-item" style="width: 75px" >002</li>
-            <li class="list-group-item" style="width: 150px" >Categoría</li>
-            <li class="list-group-item" style="width: 150px">Marca</li>
-            <li class="list-group-item" style="width: 150px">Modelo</li>
-            <li class="list-group-item" style="width: 150px">Valor</li>
+            <li class="list-group-item list-group-item-action" style="width: 75px" onclick="Revisarficha('002')">002</li>
+            <li class="list-group-item list-group-item-action" style="width: 150px" >Categoría</li>
+            <li class="list-group-item list-group-item-action" style="width: 150px">Marca</li>
+            <li class="list-group-item list-group-item-action" style="width: 150px">Modelo</li>
+            <li class="list-group-item list-group-item-action" style="width: 150px">Valor</li>
         </ol>
     </div>
 
