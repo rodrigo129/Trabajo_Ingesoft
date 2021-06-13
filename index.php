@@ -3,10 +3,10 @@
 $cookie_name="permisos";
 $cookie_value=0;
 setcookie("permisos", 0, time() + (86400 / 24), "/");
-setcookie("test", 2, time() + (86400 / 24), "/");
+#setcookie("test", 2, time() + (86400 / 24), "/");
 #$_GET["selecion"]="Inicio";
 require_once "Capa_Control/control_barras.php";
-
+require_once "Capa_Control/init.php";
 $control_barra = new Controlador_barras();
 $control_barra -> acceder();
 
@@ -26,20 +26,28 @@ $control_barra -> acceder();
 </head>
 <!--<script src="JavaScript/jquery.js"></script> -->
 <body>
+<!--
     <h1>
         este es un header
     </h1>
-
+-->
 <div>
     <h2>
-        debug<br>
+        <!--debug<br> -->
         <?php
-        echo $_GET["selecion"];
-        ?><br>
+        #echo "tamaño de de post <br>";
+        #echo count($_POST);
+        #echo "<br>contenido _POST<br>";
+        #echo implode($_POST);
+        #echo "<br>";
+        #echo "<br>#######"
+        ?>
 
-        #######
+
     </h2>
 </div>
-
+<script>
+    var respuesta = <?php echo $re?>
+</script>
 
 </body>
