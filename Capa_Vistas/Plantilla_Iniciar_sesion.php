@@ -14,6 +14,7 @@ require_once "Plantilla_barra.php"
 
     ?>
     <script>
+        var gloval_test=0
         function algo(){
             console.log("coso\n")
         }
@@ -36,6 +37,8 @@ require_once "Plantilla_barra.php"
                     </li>
                 </ul>
             </nav>
+            <h6 class="text-danger" id ="mensaje">
+            </h6>
         </div>
 
 

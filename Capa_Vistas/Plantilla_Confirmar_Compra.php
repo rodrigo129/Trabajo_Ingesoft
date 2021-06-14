@@ -10,7 +10,11 @@
 <!--<script src="JavaScript/jquery.js"></script> -->
 <body>
 
-<div class="bg-image" style="background-image: url('Imagenes/Malkuth Story.png');height: 100vh;">
+<div class="bg-image"
+     style="
+     background-image: url('Imagenes/Malkuth Story.png');
+     background-attachment:fixed;
+     height: 100vh;">
     <h1 class=" text-warning">
         Tienda Online
     </h1>

@@ -46,8 +46,6 @@ $control_barra -> acceder();
 
     </h2>
 </div>
-<script>
-    var respuesta = <?php echo $re?>
-</script>
+
 
 </body>
