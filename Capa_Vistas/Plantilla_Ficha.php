@@ -2,58 +2,50 @@
     <meta charset="UTF-8">
     <title>Trabajo Ingenieria de software</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <style>
+        .parallax {
+            /* The image used */
+            background-image: url("../Imagenes/Malkuth Story.png");
+
+            /* Set a specific height */
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 200vh;
+        }
+    </style>
     <link rel="stylesheet" href="../bootstrap-5.0.1-dist/css/bootstrap.min.css">
     <script src="../bootstrap-5.0.1-dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <!--<script src="JavaScript/jquery.js"></script> -->
-
-<!--<nav class="navbar navbar-expand-xl bg-dark">
-    <ul class="navbar">
-        <li class="nav-item">
-            <a class="nav-link" href="#">productos</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">link 1</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">link 1</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Iniciar sesion</a>
-        </li>
-    </ul>
-
-</nav>-->
-<div class="bg-image"
-     style="
-     background-image: url('../Imagenes/Malkuth Story.png');
-     height: 100vh;
-  "
->
-    <div>
-        <h1 class="text-warning">
-            Tienda Online
-        </h1>
-        <?php
-        #echo "plantilla inicio";
-        require_once "Plantilla_barra.php"
-        ?>
-    </div>
-    <div style='text-align:center'>
-        <h2 class="text-warning">
-            Ficha Técnica
-        </h2>
-    </div>
-    <div>
+<body>
+    <div class="parallax">
+        <div>
+            <h1 class="text-warning">
+                Tienda Online
+            </h1>
+            <?php
+                #echo "plantilla inicio";
+                require_once "Plantilla_barra.php"
+            ?>
+        </div>
         <div style='text-align:center'>
-            <ol class="list-group">
-                <ol class="list-group list-group-horizontal">
-                    <li class="list-group-item" style="width: 75px" >IDP</li>
-                    <li class="list-group-item" style="width: 250px" >Descripción</li>
-                    <li class="list-group-item" style="width: 150px">Características</li>
-                    <li class="list-group-item" style="width: 150px">Valor</li>
-                    <li class="list-group-item" style="width: 150px">Garantía (meses)</li>
-                </ol>
+            <h2 class="text-warning">
+                Ficha Técnica
+            </h2>
+        </div>
+        <div>
+            <div style='text-align:center'>
+                <ol class="list-group">
+                    <ol class="list-group list-group-horizontal">
+                        <li class="list-group-item" style="width: 75px" >IDP</li>
+                        <li class="list-group-item" style="width: 250px" >Descripción</li>
+                        <li class="list-group-item" style="width: 150px">Características</li>
+                        <li class="list-group-item" style="width: 150px">Valor</li>
+                        <li class="list-group-item" style="width: 150px">Garantía (meses)</li>
+                    </ol>
                 <!--Aqui debe consultar la SQL y mostrar los datos como una lista horizontal anidada
                     Ejemplo:
                     <ol class="list-group list-group-horizontal">
@@ -64,13 +56,12 @@
                         <li class="list-group-item" style="width: 150px">pongamosle que tiene 12 meses de garantía</li>
                     </ol>
                     Fin Ejemplo-->
-            </ol>
+                </ol>
+            </div>
+        </div>
+        <div style='text-align:center'>
+            <a class="btn btn-primary" href="#" role="button">Volver a Productos</a>
+            <a class="btn btn-primary" href="#" role="button">Añadir al Carro</a>
         </div>
     </div>
-    <div style='text-align:center'>
-        <a class="btn btn-primary" href="#" role="button">Volver a Productos</a>
-        <a class="btn btn-primary" href="#" role="button">Añadir al Carro</a>
-    </div>
-</div>
-
 </body>

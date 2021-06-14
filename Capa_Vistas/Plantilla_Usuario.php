@@ -8,13 +8,12 @@
             background-image: url("../Imagenes/Malkuth Story.png");
 
             /* Set a specific height */
-            height=100%;
 
             /* Create the parallax scrolling effect */
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
-            background-size: cover;
+            height: 200vh;
         }
     </style>
     <link rel="stylesheet" href="../bootstrap-5.0.1-dist/css/bootstrap.min.css">
@@ -23,15 +22,7 @@
 <!--<script src="JavaScript/jquery.js"></script> -->
 <body>
 
-<div class="bg-image"
-     style="
-     background-image: url('../Imagenes/Malkuth Story.png');
-     background-attachment: fixed;
-     background-position: center;
-     background-repeat: no-repeat;
-     height: 200vh;
-  "
->
+<div class="parallax">
     <h1 class="text-warning">
         Tienda Online
     </h1>
@@ -59,7 +50,3 @@
 </div>
 
 </body>
-
-
-    </body>
-</div>

@@ -23,15 +23,7 @@
 <!--<script src="JavaScript/jquery.js"></script> -->
 <body>
 
-<div class="bg-image"
-     style="
-     background-image: url('../Imagenes/Malkuth Story.png');
-     background-attachment: fixed;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-  "
->
+<div class="parallax">
     <h1 class="text-warning">
         Tienda Online
     </h1>

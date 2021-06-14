@@ -2,19 +2,25 @@
     <meta charset="UTF-8">
     <title>Trabajo Ingenieria de software</title>
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1">
+    <style>
+        .parallax {
+            /* The image used */
+            background-image: url("../Imagenes/Malkuth Story.png");
+
+            /* Set a specific height */
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 200vh;
+        }
+    </style>
     <link rel="stylesheet" href="../bootstrap-5.0.1-dist/css/bootstrap.min.css">
     <script src="../bootstrap-5.0.1-dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <!--<script src="JavaScript/jquery.js"></script> -->
-<div class="bg-image"
-     style="
-     background-image: url('../Imagenes/Malkuth Story.png');
-     background-attachment: fixed;
-     background-position: center;
-     background-repeat: no-repeat;
-     height: 200vh;
-  "
->
+<div class="parallax">
     <h1 class="text-warning">
         Tienda Online
     </h1>
