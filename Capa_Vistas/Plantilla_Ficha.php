@@ -1,8 +1,3 @@
-<?php
-#echo "plantilla inicio";
-require_once "Plantilla_barra.php"
-?>
-
 <head>
     <meta charset="UTF-8">
     <title>Trabajo Ingenieria de software</title>
@@ -11,12 +6,8 @@ require_once "Plantilla_barra.php"
     <script src="../bootstrap-5.0.1-dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <!--<script src="JavaScript/jquery.js"></script> -->
-<div>
-    <h1>
-        Tienda Online
-    </h1>
-</div>
-<nav class="navbar navbar-expand-xl bg-dark">
+
+<!--<nav class="navbar navbar-expand-xl bg-dark">
     <ul class="navbar">
         <li class="nav-item">
             <a class="nav-link" href="#">productos</a>
@@ -32,13 +23,22 @@ require_once "Plantilla_barra.php"
         </li>
     </ul>
 
-</nav>
+</nav>-->
 <div class="bg-image"
      style="
      background-image: url('../Imagenes/Malkuth Story.png');
      height: 100vh;
   "
 >
+    <div>
+        <h1 class="text-warning">
+            Tienda Online
+        </h1>
+        <?php
+        #echo "plantilla inicio";
+        require_once "Plantilla_barra.php"
+        ?>
+    </div>
     <div style='text-align:center'>
         <h2 class="text-warning">
             Ficha Técnica
