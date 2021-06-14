@@ -4,6 +4,9 @@ class Direccionar{
         $plantilla = "Capa_Vistas\Plantilla_Inicio.php";
         if($vista_pedida == "Inicio" ||
             $vista_pedida == "Productos" ||
+            $vista_pedida == "Carro" ||
+            $vista_pedida == "Confirmar_Compra" ||
+            $vista_pedida == "Ficha" ||
             $vista_pedida == "Iniciar_sesion"){
             $plantilla = "Capa_Vistas\Plantilla_".$vista_pedida.".php";
         }
