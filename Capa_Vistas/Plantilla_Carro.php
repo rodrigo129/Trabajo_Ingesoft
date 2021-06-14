@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <title>Trabajo Ingenieria de software</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
-    <link rel="stylesheet" href="../bootstrap-5.0.1-dist/css/bootstrap.min.css">
-    <script src="../bootstrap-5.0.1-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.0.1-dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <!--<script src="JavaScript/jquery.js"></script> -->
 <body>
-
+<?php
+require_once "JavaScript/Ir_Productos.php";
+require_once "JavaScript/Ir_Carro.php";
+require_once "JavaScript/AJAX_Vaciar_Carro.php";
+?>
 <div class="bg-image"
      style="
      background-image: url('Imagenes/Malkuth Story.png');
@@ -21,7 +25,7 @@
     </h1>
     <?php
     #echo "plantilla inicio";
-    require_once "Plantilla_barra.php"
+    require_once "Plantilla_barra.php";
     ?>
     <div class="text-warning" style='text-align:center'>
         <h2>
@@ -50,9 +54,9 @@
     <div class="container">
         <!--<form action="Enviar_Datos.php" method="get">-->
         <div style='text-align:center'>
-            <a class="btn btn-primary" href="#" role="button">Volver a Productos</a>
-            <a class="btn btn-secondary" href="#" role="button">Actualizar Carro</a>
-            <a class="btn btn-danger" href="#" role="button">Vaciar Carro</a>
+            <a class="btn btn-primary" href="#" role="button" onclick="redirect_Produtos()">Volver a Productos</a>
+            <a class="btn btn-secondary" href="#" role="button" onclick="redirect_Carro()">Actualizar Carro</a>
+            <a class="btn btn-danger" href="#" role="button" onclick="Solicitus_Vaciar()">Vaciar Carro</a>
         </div>
 
         <div>

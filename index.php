@@ -25,15 +25,16 @@ $control_barra -> acceder();
     <script src="bootstrap-5.0.1-dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <!--<script src="JavaScript/jquery.js"></script> -->
-<body>
 <!--
+<body>
+
     <h1>
         este es un header
     </h1>
--->
+
 <div>
     <h2>
-        <!--debug<br> -->
+
         <?php
         #echo "tamaño de de post <br>";
         #echo count($_POST);
@@ -49,3 +50,4 @@ $control_barra -> acceder();
 
 
 </body>
+-->

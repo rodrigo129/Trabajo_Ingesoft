@@ -1,4 +1,7 @@
 <?php
+if (session_status() != 2){
+    session_start();
+}
 require_once "Conexion_base_de_datos.php";
 $mensaje = json_decode($_POST["mensaje"]);
 $user = $mensaje["0"];
@@ -69,8 +72,12 @@ else{
     #$array_resultado = $respuesta_lista["resultado"];
     $password_respuesta = $array_resultado["password"];
     if ($password == $password_respuesta){
-        $ID_respuesta = $array_resultado["ID"];
+
+        $ID_respuesta = strval($array_resultado["ID"]);
         #la contraseña indicada es la correcta
+        $_SESSION["Usuario"]=$user;
+        $_SESSION["ID"] = $ID_respuesta;
+        session_write_close();
         echo json_encode(['status'=>true,
             'resultado'=>$ID_respuesta]);
     }
